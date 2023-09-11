@@ -4,16 +4,14 @@
 
 def minOperations(n):
     """Calculates the number of operations to result n H characters"""
-    if (n < 2):
-        return 0
+    min_operation = 0
+    factor = 2
 
-    min_Operation = 0
+    while n > 1:
+        if n % factor == 0:
+            min_operation += factor
+            n //= factor
+        else:
+            factor += 1
 
-  
-    for i in range(2, (n + 1)):
-
-        while (n % i == 0):
-            min_Operation += i
-            n //= i
-
-    return min_Operation
+    return min_operation
