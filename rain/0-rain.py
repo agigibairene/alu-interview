@@ -3,7 +3,7 @@
 
 
 def rain(walls):
-    """ Calculates how many squares units of water 
+    """ Calculates how many squares units of water
     will be retained after it rains"""
 
     water = 0
