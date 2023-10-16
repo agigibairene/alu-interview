@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""Returns a list of lists of integers 
-representing the Pascal's triangle"""
+"""Returns a list of lists of integers representing the Pascal's triangle"""
 
 
 def pascal_triangle(n):
-    """
-    Creates a list of lists of integers representing Pascal's triangle
-    """
+    """Creates a list of lists of integers representing Pascal's triangle"""
     if type(n) is not int:
         raise TypeError("n must be an integer")
     triangle = []
